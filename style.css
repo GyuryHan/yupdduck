@@ -239,13 +239,49 @@ a.menu_top:hover {
     background-color: #ffffff;
   }
 
+  .container>.navbar-header:active, 
+  .container>.navbar-header:hover,
+  .navbar-default .navbar-collapse {
+    background: #f8f4eb;
+  }
+
+  .navbar-default .navbar-toggle:active,
+  .navbar-default .navbar-toggle:hover { 
+    border-color: #f8f4eb;
+    background: #f8f4eb;
+  }
+
+  .navbar_menu {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navbar_menu a {
+    color: #8c6239;
+  }
+
+  a.menu_top { 
+    font-size: 1.5rem;
+  }
+  
+  .navbar_menu li {
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding: 20px;
+  }
+
   .main_img {
     background-image: url(./img/main2.png);
     margin-top: 60px;
   }
 
-  .visible-xs img {
+  .main_mobile img {
     width: 100%;
+  }
+
+  .info p {
+    font-size: 12px;
   }
 
   .menu_food {
@@ -255,19 +291,13 @@ a.menu_top:hover {
 
   .menu_box1, .menu_box2,
   .menu_box3, .menu_box4 {
-    padding: 20px;
+    padding: 10px;
     padding-bottom: 0;
     margin-bottom: 60px;
   }
 
   .menu_wrap img {
     margin-top: 20px;
-  }
-
-  .menu_food .col-xs-6 {
-    /* width: 43%;
-    height: 300px;
-    margin: 5px; */
   }
 
   .footer2 {
@@ -291,5 +321,59 @@ a.menu_top:hover {
   .footer5 {
     font-size: 11px;
     padding: 10px 0 15px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar_menu li {
+    padding: 20px 10px 10px 10px;
+  }
+
+  .main_img {
+    background-image: url(./img/main2.png);
+    height: 930px;
+    margin-top: 100px;
+  }
+
+  .navbar_links {
+    margin-right: 20px;
+  }
+
+  .menu_food {
+    height: 1020px;
+  }
+
+  .menu_wrap img {
+    margin-top: 0;
+  }
+
+  .menu_box1, .menu_box2,
+  .menu_box3, .menu_box4 {
+    padding: 20px;
+    max-height: 400px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
+
+  .footer1 {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1270px) {
+  .navbar_menu li {
+    padding: 20px;
+  }
+
+  .main_img {
+    margin-top: 110px;
+  }
+
+  .menu_food {
+    height: 700px;
+  }
+
+  .footer1 {
+    margin-top: 100px;
   }
 }
